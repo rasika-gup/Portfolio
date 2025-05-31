@@ -7,7 +7,6 @@ interface Project {
   description: string;
   technologies: string[];
   github: string;
-  demo: string;
   image: string;
 }
 
@@ -67,15 +66,6 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, delay = 0 }) => {
           >
             <Github size={16} />
             <span>Code</span>
-          </a>
-          <a 
-            href={project.demo} 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="flex items-center space-x-1 text-gray-300 hover:text-teal-400 transition-colors"
-          >
-            <ExternalLink size={16} />
-            <span>Demo</span>
           </a>
         </div>
       </div>

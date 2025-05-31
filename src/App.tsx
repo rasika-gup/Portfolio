@@ -75,7 +75,7 @@ function App() {
   ];
 
   const webDevSkills = [
-    { name: 'HTML', percentage: 95 },
+    { name: 'HTML'},
     { name: 'CSS', percentage: 90 },
     { name: 'JavaScript', percentage: 85 },
     { name: 'TypeScript', percentage: 80 },
@@ -85,7 +85,11 @@ function App() {
 
   const designSkills = [
     { name: 'Canva', percentage: 90 },
+    { name: 'Github', percentage: 60 },
+    { name: 'VS Code', percentage: 60 },
     { name: 'Figma', percentage: 60 },
+    { name: 'Jupyter Notebook', percentage: 60 },
+    { name: 'Cisco Packet Tracer', percentage: 60 },
   ];
 
   const projects = [
@@ -98,11 +102,20 @@ function App() {
       liveLink: 'https://econexus.netlify.app/'
     },
     {
+      title: 'University Website',
+      description: 'A modern, informative university website featuring up-to-date news, academic resources, event calendars, and interactive tools. Built for accessibility and ease of use, this site showcases our university’s vibrant community and commitment to excellence.',
+      technologies: ['HTML', 'CSS', 'JavaScript', 'React'],
+      github: 'https://github.com/rasika-gup/University',
+      image: 'https://images.unsplash.com/photo-1541339907198-e08756dedf3f?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      liveLink: 'https://vit-uni.netlify.app/'
+    },
+    {
       title: 'Veggie-Lite-Basket',
       description: 'An interactive grocery website with modern UI and seamless shopping experience.',
       technologies: ['HTML', 'CSS', 'JavaScript', 'React'],
       github: 'https://github.com/rasika-gup/Veggie-Lite-Basket',
       image: 'https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?q=80&w=1000',
+      liveLink: 'https://veggie-lite-basket.netlify.app/'
     },
     {
       title: 'Basic Firewall Implementation',
@@ -244,13 +257,15 @@ function App() {
           </h2>
           <div className="backdrop-blur-lg bg-white/5 rounded-2xl p-8 shadow-[0_8px_30px_rgb(0,0,0,0.12)] border border-white/10 hover:border-purple-500/30 transition-all duration-500">
             <p className="text-lg leading-relaxed mb-6">
-              I'm a passionate AI/ML student from Agra, India, currently pursuing my degree at Vellore Institute of Technology (VIT). I specialize in Python, Java, C, C++, HTML, CSS, React, JavaScript, TypeScript, Node.js, Canva, and Figma. As a full-stack developer and designer, I love building innovative solutions and crafting beautiful designs.
+            I have a solid foundation in web development and a genuine passion for building functional and visually appealing websites. As a second-year Computer Science Engineering student specializing in AI & ML, I actively apply my technical learning by working on projects using HTML, CSS, JavaScript, react. I'm also constantly exploring new tools and frameworks to enhance both my frontend skills and overall understanding of how intelligent systems interact with the web.
+
+My projects reflect my ability to create responsive designs, debug issues, and write clean, maintainable code. Beyond technical skills, I’m a quick learner, detail-oriented, and enthusiastic about solving real-world problems. I’m eager to contribute to your team, learn from experienced developers, and grow through hands-on experience that complements both my web development and AI interests.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
               <div className="backdrop-blur-md bg-white/5 rounded-xl p-6 hover:bg-white/10 transition-all duration-300 hover:scale-105 border border-white/10 hover:border-pink-500/30">
                 <h3 className="text-xl font-semibold mb-3 text-pink-400">Education</h3>
-                <p>B.Tech in Artificial Intelligence and Machine Learning</p>
-                <p className="text-gray-300">Vellore Institute of Technology (VIT)</p>
+                <p>B.Tech in CSE- Artificial Intelligence and Machine Learning</p>
+                <p className="text-gray-300">Vellore Institute of Technology, Chennai (VIT)</p>
                 <p className="text-gray-400">2023 - 2027</p>
               </div>
               <div className="backdrop-blur-md bg-white/5 rounded-xl p-6 hover:bg-white/10 transition-all duration-300 hover:scale-105 border border-white/10 hover:border-purple-500/30">
@@ -263,6 +278,10 @@ function App() {
                 <h3 className="text-xl font-semibold mb-3 text-teal-400">Interests</h3>
                 <p>Artificial Intelligence</p>
                 <p>Machine Learning</p>
+                <p>Data Science</p>
+                <p>Data Analysis</p>
+                <p>Python Programming</p>
+                <p>Android Development</p>
                 <p>Web Development</p>
                 <p>UI/UX Design</p>
               </div>
@@ -309,7 +328,7 @@ function App() {
               </div>
             </div>
             <div className="backdrop-blur-lg bg-white/5 rounded-2xl p-8 shadow-[0_8px_30px_rgb(0,0,0,0.12)] border border-white/10 hover:border-teal-500/30 transition-all duration-500">
-              <h3 className="text-2xl font-semibold mb-6 text-teal-400">Design Tools</h3>
+              <h3 className="text-2xl font-semibold mb-6 text-teal-400">Other Tools</h3>
               <div className="space-y-6">
                 {designSkills.map((skill, index) => (
                   <SkillBar 
